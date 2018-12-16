@@ -1,1 +1,59 @@
-# test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Folki Church</title>
+    <link rel="stylesheet" type="text/css" href="static/folki.css" />
+    <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="static/choir.ogg" type="audio/ogg">
+    </audio>
+    <div id="halo"></div>
+    <div id="image"></div>
+    <div class="icon" style="background: url('static/icons/android.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/angular.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/croz.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/ccq.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/cpp.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/django.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/docker.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/duke.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/eclipse.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/facebook.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/git.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/gradle.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/hibernate.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/html.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/idea.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/java.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/msw_logo.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/mysql.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/nodejs.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/postgresql.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/php.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/python.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/react.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/redux.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/ruby.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/ruby_on_rails.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/scala.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/spring.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/spring_boot.png') no-repeat center center; background-size: 100%"></div>
+    <div class="icon" style="background: url('static/icons/tomcat.png') no-repeat center center; background-size: 100%"></div>
+    <script>
+      $(document).ready(function(){
+        $('.icon').each(function () {
+          $(this).css('top', 50 + Math.random() * ($(window).height() - 100));
+          $(this).css('z-index', Math.floor(Math.random() * 200));
+          $(this).css('animation-duration', (20 + Math.random() * 100) + 's');
+          $(this).css('animation-name', ['slowestSpin', 'slowSpin', 'mediumSpin', 'fastSpin', 'fastestSpin'][Math.floor(Math.random() * 5)] + ['Left', 'Right'][Math.floor(Math.random() * 2)]);
+        })
+      });
+    </script>
+</body>
+</html>
